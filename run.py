@@ -28,12 +28,10 @@ question number is set to  0.
 
 answers = ("A", "C", "B", "D", "B")
 guesses = []
-score = 0
-question_num = 0
+
 
 
 """
-
 Main function that has for a loop to get the questions from the tuple.
 Then prints them, we also have a for loop that get the options from the other
 tuple and prints them to the terminal. THen we have an input that asks you
@@ -43,38 +41,57 @@ correct answer and if it's not.
 
 """
 
-for question in questions:
-    print("----------------------")
-    print(question)
-    for option in options[question_num]:
-        print(option)
 
-    guess = input("Enter (A, B, C, D): ").upper()
-    guesses.append(guess)
-    if guess == answers[question_num]:
-        score += 1
-        print("CORRECT!")
-    else:
-        print("INCORRECT!")
-        print(f"{answers[question_num]} is the correct answer")
-    question_num += 1
+def run_game():
+    score = 0
+    question_num = 0
+    for question in questions:
+        print("----------------------")
+        print(question)
+        for option in options[question_num]:
+            print(option)
 
-"""Simple print commands to print the asnwers in %
-so works with how many questions you have"""
+        guess = input("Enter (A, B, C, D): ").upper()
+        guesses.append(guess)
+        if guess == answers[question_num]:
+            score += 1
+            print("CORRECT!")
+        else:
+            print("INCORRECT!")
+            print(f"{answers[question_num]} is the correct answer")
+        question_num += 1
+
+        score = int(score / len(questions) * 100 )
+        print(f"Your score is: {score}%")          
 
 
-print("       RESULTS        ")
+"""
+
+Simple print commands to print the asnwers in %
+so works with how many questions you have
+
+"""
 
 
-print("answers: ", end="")
-for answer in answers:
-    print(answer, end=" ")
-print()
+def print_results():
+    print("       RESULTS        ")
+    
+    print("answers: ", end="")
+    for answer in answers:
+        print(answer, end=" ")
+    print()
 
-print("guesses: ", end="")
-for guess in guesses:
-    print(guess, end=" ")
-print()
+    print("guesses: ", end="")
+    for guess in guesses:
+        print(guess, end=" ")
+    print()
 
-score = int(score / len(questions) * 100)
-print(f"Your score is: {score}%")
+
+
+def main():
+    run_game()
+    print_results()
+
+
+print("Welcome to The movie Quiz-game python version")
+main()

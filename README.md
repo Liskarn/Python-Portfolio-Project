@@ -1,31 +1,18 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Python Quiz game 
 
-Welcome Morgan Klockars,
+A simple movie quiz game made in python, wich runs in the terminal on Heroku.\
+Users can test their knowledge about popular movie titels and actors. \
+[Here is the game on Heroku!](https://python-quiz-game-liskarn.herokuapp.com/)\
+![picture of the app onn am i responsive website!](/assets/images/am_i_responsive.png)\
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## How to play 
 
-## Reminders
+Movie Quiz-game is a simple quiz game you play in the terminal.\
+So you load the game on Heroku and you read the question and answer\
+with A,B,C,D to the corresponding guess. When you have answerd all the\
+questions you will see the result and wich one you missed.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+# Features 
 
-## Creating the Heroku app
+## Existing Features
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
