@@ -16,3 +16,12 @@ questions you will see the result and wich one you missed.
 
 ## Existing Features
 
+- A set of questions in that are challenging and related to movies.\
+![Picture of the landing screen for the game](/assets/images/landing_screen.png)
+
+- The game gives you feedback if it is correct or not.\
+![picture of incorrect answer](/assets/images/incorrect.png)
+# Future features
+- Randomize and build a bigger pool of questions, would like to try and pull questions from a database.
+- more input controll was really rushed doing this project.
+- 

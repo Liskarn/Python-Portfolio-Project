@@ -30,7 +30,6 @@ answers = ("A", "C", "B", "D", "B")
 guesses = []
 
 
-
 """
 Main function that has for a loop to get the questions from the tuple.
 Then prints them, we also have a for loop that get the options from the other
@@ -61,8 +60,8 @@ def run_game():
             print(f"{answers[question_num]} is the correct answer")
         question_num += 1
 
-        score = int(score / len(questions) * 100 )
-        print(f"Your score is: {score}%")          
+        score = int(score / len(questions) * 100)
+        print(f"Your score is: {score}%")
 
 
 """
@@ -75,7 +74,6 @@ so works with how many questions you have
 
 def print_results():
     print("       RESULTS        ")
-    
     print("answers: ", end="")
     for answer in answers:
         print(answer, end=" ")
@@ -85,7 +83,6 @@ def print_results():
     for guess in guesses:
         print(guess, end=" ")
     print()
-
 
 
 def main():
