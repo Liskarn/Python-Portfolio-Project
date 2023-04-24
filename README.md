@@ -25,3 +25,41 @@ questions you will see the result and wich one you missed.
 - Randomize and build a bigger pool of questions, would like to try and pull questions from a database.
 - more input controll was really rushed doing this project.
 - 
+
+# Data model 
+I have to tuples that contain the data and the questions. 
+The questions are pulled from on tuple and the answers from the other.
+When the answer is inputed the guess is compared to the question number and the gueasses.
+
+# Testing 
+i have manually tested the application 
+- The code padde trough the PEP8 linter and only had some line indention problem on my tuples.
+and the strings where to long but it dont trow and error in the terminal.
+
+# Bugs
+
+- Did not get the score to show corectly think it is a math problem
+
+# Remaining bugs
+
+- Did not get the score to show corectly think it is a math problem
+
+# validator testing 
+
+- PEP8 
+    - No Errors where returned from PEP8online.com
+
+# Deployment
+
+This project was deployed to Code institute's mock terminal for Heroku
+
+- Steps for deployment:
+    - Fork or Clone this repository
+    - Create Heroku app
+    - Set the building blocks to python and node JS in that order or it will not work
+    - Link the Heroku app to the repository 
+    - Click Deploy
+
+# Credits 
+
+- Code institute for the deployment terminal
